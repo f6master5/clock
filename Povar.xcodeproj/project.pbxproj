@@ -1,0 +1,552 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE425779247D40F7005B7712 /* Povar WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CE425778247D40F7005B7712 /* Povar WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CE42577F247D40F7005B7712 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE42577D247D40F7005B7712 /* Interface.storyboard */; };
+		CE425781247D40F8005B7712 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE425780247D40F8005B7712 /* Assets.xcassets */; };
+		CE425788247D40F8005B7712 /* Povar WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CE425787247D40F8005B7712 /* Povar WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CE42578D247D40F8005B7712 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE42578C247D40F8005B7712 /* InterfaceController.swift */; };
+		CE42578F247D40F8005B7712 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE42578E247D40F8005B7712 /* ExtensionDelegate.swift */; };
+		CE425791247D40F8005B7712 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE425790247D40F8005B7712 /* Assets.xcassets */; };
+		CE4257A1247D4239005B7712 /* WelcomeInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4257A0247D4239005B7712 /* WelcomeInterfaceController.swift */; };
+		CE4257A3247D44B7005B7712 /* TableRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4257A2247D44B7005B7712 /* TableRowController.swift */; };
+		CE4257A7247D5D15005B7712 /* InterfaceDetaillController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4257A6247D5D15005B7712 /* InterfaceDetaillController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE42577A247D40F7005B7712 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE42576E247D40F6005B7712 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE425777247D40F7005B7712;
+			remoteInfo = "Povar WatchKit App";
+		};
+		CE425789247D40F8005B7712 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE42576E247D40F6005B7712 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE425786247D40F8005B7712;
+			remoteInfo = "Povar WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CE425798247D40F8005B7712 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CE425788247D40F8005B7712 /* Povar WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE42579C247D40F8005B7712 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				CE425779247D40F7005B7712 /* Povar WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CE425774247D40F6005B7712 /* Povar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Povar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE425778247D40F7005B7712 /* Povar WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Povar WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE42577E247D40F7005B7712 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		CE425780247D40F8005B7712 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE425782247D40F8005B7712 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE425787247D40F8005B7712 /* Povar WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Povar WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE42578C247D40F8005B7712 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		CE42578E247D40F8005B7712 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		CE425790247D40F8005B7712 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE425792247D40F8005B7712 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE4257A0247D4239005B7712 /* WelcomeInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeInterfaceController.swift; sourceTree = "<group>"; };
+		CE4257A2247D44B7005B7712 /* TableRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableRowController.swift; sourceTree = "<group>"; };
+		CE4257A6247D5D15005B7712 /* InterfaceDetaillController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceDetaillController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE425784247D40F8005B7712 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE42576D247D40F6005B7712 = {
+			isa = PBXGroup;
+			children = (
+				CE42577C247D40F7005B7712 /* Povar WatchKit App */,
+				CE42578B247D40F8005B7712 /* Povar WatchKit Extension */,
+				CE425775247D40F6005B7712 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE425775247D40F6005B7712 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE425774247D40F6005B7712 /* Povar.app */,
+				CE425778247D40F7005B7712 /* Povar WatchKit App.app */,
+				CE425787247D40F8005B7712 /* Povar WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE42577C247D40F7005B7712 /* Povar WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				CE42577D247D40F7005B7712 /* Interface.storyboard */,
+				CE425780247D40F8005B7712 /* Assets.xcassets */,
+				CE425782247D40F8005B7712 /* Info.plist */,
+			);
+			path = "Povar WatchKit App";
+			sourceTree = "<group>";
+		};
+		CE42578B247D40F8005B7712 /* Povar WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CE42578C247D40F8005B7712 /* InterfaceController.swift */,
+				CE42578E247D40F8005B7712 /* ExtensionDelegate.swift */,
+				CE4257A0247D4239005B7712 /* WelcomeInterfaceController.swift */,
+				CE4257A2247D44B7005B7712 /* TableRowController.swift */,
+				CE4257A6247D5D15005B7712 /* InterfaceDetaillController.swift */,
+				CE425790247D40F8005B7712 /* Assets.xcassets */,
+				CE425792247D40F8005B7712 /* Info.plist */,
+			);
+			path = "Povar WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE425773247D40F6005B7712 /* Povar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE42579D247D40F8005B7712 /* Build configuration list for PBXNativeTarget "Povar" */;
+			buildPhases = (
+				CE425772247D40F6005B7712 /* Resources */,
+				CE42579C247D40F8005B7712 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE42577B247D40F7005B7712 /* PBXTargetDependency */,
+			);
+			name = Povar;
+			productName = Povar;
+			productReference = CE425774247D40F6005B7712 /* Povar.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		CE425777247D40F7005B7712 /* Povar WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE425799247D40F8005B7712 /* Build configuration list for PBXNativeTarget "Povar WatchKit App" */;
+			buildPhases = (
+				CE425776247D40F7005B7712 /* Resources */,
+				CE425798247D40F8005B7712 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE42578A247D40F8005B7712 /* PBXTargetDependency */,
+			);
+			name = "Povar WatchKit App";
+			productName = "Povar WatchKit App";
+			productReference = CE425778247D40F7005B7712 /* Povar WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		CE425786247D40F8005B7712 /* Povar WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE425795247D40F8005B7712 /* Build configuration list for PBXNativeTarget "Povar WatchKit Extension" */;
+			buildPhases = (
+				CE425783247D40F8005B7712 /* Sources */,
+				CE425784247D40F8005B7712 /* Frameworks */,
+				CE425785247D40F8005B7712 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Povar WatchKit Extension";
+			productName = "Povar WatchKit Extension";
+			productReference = CE425787247D40F8005B7712 /* Povar WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE42576E247D40F6005B7712 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = user;
+				TargetAttributes = {
+					CE425773247D40F6005B7712 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					CE425777247D40F7005B7712 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					CE425786247D40F8005B7712 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = CE425771247D40F6005B7712 /* Build configuration list for PBXProject "Povar" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE42576D247D40F6005B7712;
+			productRefGroup = CE425775247D40F6005B7712 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE425773247D40F6005B7712 /* Povar */,
+				CE425777247D40F7005B7712 /* Povar WatchKit App */,
+				CE425786247D40F8005B7712 /* Povar WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE425772247D40F6005B7712 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE425776247D40F7005B7712 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE425781247D40F8005B7712 /* Assets.xcassets in Resources */,
+				CE42577F247D40F7005B7712 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE425785247D40F8005B7712 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE425791247D40F8005B7712 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE425783247D40F8005B7712 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE4257A1247D4239005B7712 /* WelcomeInterfaceController.swift in Sources */,
+				CE4257A7247D5D15005B7712 /* InterfaceDetaillController.swift in Sources */,
+				CE42578F247D40F8005B7712 /* ExtensionDelegate.swift in Sources */,
+				CE42578D247D40F8005B7712 /* InterfaceController.swift in Sources */,
+				CE4257A3247D44B7005B7712 /* TableRowController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE42577B247D40F7005B7712 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE425777247D40F7005B7712 /* Povar WatchKit App */;
+			targetProxy = CE42577A247D40F7005B7712 /* PBXContainerItemProxy */;
+		};
+		CE42578A247D40F8005B7712 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE425786247D40F8005B7712 /* Povar WatchKit Extension */;
+			targetProxy = CE425789247D40F8005B7712 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE42577D247D40F7005B7712 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE42577E247D40F7005B7712 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE425793247D40F8005B7712 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE425794247D40F8005B7712 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE425796247D40F8005B7712 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Povar WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.Povar.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		CE425797247D40F8005B7712 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Povar WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.Povar.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		CE42579A247D40F8005B7712 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = Povar_WatchKit_Extension;
+				INFOPLIST_FILE = "Povar WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = test.Povar.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		CE42579B247D40F8005B7712 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = Povar_WatchKit_Extension;
+				INFOPLIST_FILE = "Povar WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = test.Povar.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		CE42579E247D40F8005B7712 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.Povar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CE42579F247D40F8005B7712 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.Povar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE425771247D40F6005B7712 /* Build configuration list for PBXProject "Povar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE425793247D40F8005B7712 /* Debug */,
+				CE425794247D40F8005B7712 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE425795247D40F8005B7712 /* Build configuration list for PBXNativeTarget "Povar WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE425796247D40F8005B7712 /* Debug */,
+				CE425797247D40F8005B7712 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE425799247D40F8005B7712 /* Build configuration list for PBXNativeTarget "Povar WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE42579A247D40F8005B7712 /* Debug */,
+				CE42579B247D40F8005B7712 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE42579D247D40F8005B7712 /* Build configuration list for PBXNativeTarget "Povar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE42579E247D40F8005B7712 /* Debug */,
+				CE42579F247D40F8005B7712 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE42576E247D40F6005B7712 /* Project object */;
+}

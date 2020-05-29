@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="16097" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qBz-Bg-p7E">
+    <device id="watch40"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="16012"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome Interface Controller-->
+        <scene sceneID="xmq-Gn-gha">
+            <objects>
+                <controller id="qBz-Bg-p7E" customClass="WelcomeInterfaceController" customModule="Povar_WatchKit_Extension">
+                    <items>
+                        <imageView alignment="center" image="logo" id="IWM-Zv-Mnl"/>
+                        <label alignment="center" text="CookBookApp" textAlignment="center" id="Re3-de-tYg">
+                            <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                        </label>
+                        <button width="136" height="36" alignment="center" title="Next" id="AHA-Xv-pDL">
+                            <color key="titleColor" red="0.38217443229999998" green="0.21622464059999999" blue="0.1725571454" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <color key="backgroundColor" red="0.95538073779999999" green="0.71369677779999996" blue="0.24766549469999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <segue destination="AgC-eL-Hgc" kind="push" id="Kcb-mr-aVo"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-174.61728395061729" y="110.88832487309644"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Povar_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="stH-ud-s7V">
+                            <items>
+                                <tableRow identifier="Tableid" id="isL-0R-xbu" customClass="TableRowController" customModule="Povar_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="aWJ-Xb-kDr">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="IMG" id="Vm0-pr-wdv">
+                                                <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                                            </label>
+                                            <label alignment="left" verticalAlignment="center" text="Label" id="Yke-T2-611"/>
+                                        </items>
+                                        <connections>
+                                            <segue destination="ceX-2V-RAh" kind="push" id="MeU-ck-8vk"/>
+                                        </connections>
+                                    </group>
+                                    <connections>
+                                        <outlet property="img" destination="Vm0-pr-wdv" id="NOZ-fN-qtF"/>
+                                        <outlet property="titleLabel" destination="Yke-T2-611" id="7QP-IR-Tfc"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="stH-ud-s7V" id="QLg-48-Xe4"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="71" y="111"/>
+        </scene>
+        <!--Interface Detaill Controller-->
+        <scene sceneID="Bs4-o6-GcN">
+            <objects>
+                <controller id="ceX-2V-RAh" customClass="InterfaceDetaillController" customModule="Povar_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="20" alignment="left" id="Gdg-c6-NB5">
+                            <items>
+                                <label alignment="left" text="IMG" id="2gC-kw-1Bo">
+                                    <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                                </label>
+                                <label alignment="left" text="Label" id="SwI-bn-dfg"/>
+                            </items>
+                        </group>
+                        <imageView alignment="left" id="vRA-Dt-v68"/>
+                        <group width="1" alignment="center" layout="vertical" id="uCg-cz-a0E">
+                            <items>
+                                <label alignment="left" text="Автор:" id="sjl-Sh-oUM"/>
+                                <label alignment="left" text="AuthorName" id="Lmo-tm-Kzw"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" layout="vertical" id="wQ4-za-hNn">
+                            <items>
+                                <label alignment="left" text="Описание:" id="hKX-MY-DR6"/>
+                                <label alignment="left" text="Description" numberOfLines="0" id="eiF-ym-8eT"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="author" destination="Lmo-tm-Kzw" id="pQl-VY-Bp9"/>
+                        <outlet property="desc" destination="eiF-ym-8eT" id="HQT-GW-eOG"/>
+                        <outlet property="imgView" destination="vRA-Dt-v68" id="bCy-Kn-iOu"/>
+                        <outlet property="picLabel" destination="2gC-kw-1Bo" id="mUq-0Y-Hoi"/>
+                        <outlet property="titleLabel" destination="SwI-bn-dfg" id="4wg-by-sR7"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="311.45679012345681" y="110.88832487309644"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="96" height="96"/>
+    </resources>
+</document>
